@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FISCALIA REGIONAL METROPOLITANA CENTRO NORTE</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <form action="#" class="formulario">
+      
+
+      <h1 class="formulario__titulo">FISCALIA REGIONAL METROPOLITANA CENTRO NORTE</h1>
+      <h3 class="formulario__subtitulo">CONSULTA</h3>
+      <p class="formulario__parrafo">
+        Llena este pequeño formulario para su consulta.
+      </p>
+
+      <label for="cliente" class="formulario__label">¿Cuál es tu nombre?</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Indica cuál es tu nombre completo"
+      />
+
+      <label for="RUT" class="formulario__label"
+        >Ingresa tu rut</label
+      >
+      <input
+        id="RUT"
+        type="number"
+        class="formulario__input"
+    
+      />
+
+      <label for="RUC" class="formulario__label"
+        >Indica el RUC causa</label
+      >
+      <input
+       id="RUC"
+       type="number"
+       class="formulario__input" />
+
+      <label for="fiscalia" class="formulario__label"
+        >FISCALÍA ASIGNADA</label
+      >
+      <select 
+      id="fiscalia" 
+      name="listaempleados" 
+      class="formulario__input">
+        <option>REG. M. CENTRO NORTE</option>
+        <option>FISCALIA LOCAL SANTIAGO NORTE</option>
+        <option>FISCALIA LOCAL CENTRO DE JUSTICIA DE SANTIAGO</option>
+        <option>FISCALIA LOCAL SANTIAGO CENTRO</option>
+        <option>FISCALIA DE GENERO Y VIF</option>
+        <option>FISCALIA LOCAL SANTIAGO PONIENTE</option>
+        <option>FISCALIA DE DELITOS DE ALTA COMPLEJIDAD</option>
+        <option>ANÁLISIS CRIMINAL Y FOCOS INVESTIGATIVOS</option>
+        <option>FISCALÍA DE PRIMERAS DILIGENCIAS Y ACD</option>
+      </select>
+
+      <label for="servicio" class="formulario__label"
+        >¿Cuál es el servicio que se desea realizar?</label
+      >
+      <select id="servicio"
+       name="listaservicios" 
+       class="formulario__input">
+        <option>CONOCER EL RUC ASOCIADO A SU CAUSA</option>
+        <option>APORTAR ANTECEDENTES A SU CAUSA</option>
+        <option>SOLICITAR DILIGENCIAS DE INVESTIGACIÓN</option>
+        <option>SOLICITAR AUDIENCIA Y ENTREVISTA</option>
+        <option>DEVOLUCIÓN O REVISIÓN DE EVIDENCIA</option>
+      </select>
+
+      <div id="respuesta"></div>
+
+      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+    </form>
+    <script src="js/form.js"></script>
+  </body>
+</html>
